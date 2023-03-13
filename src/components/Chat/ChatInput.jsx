@@ -17,7 +17,7 @@ const ChatInput = ({ user, clickedUser, getUserMessages, getClickedUsersMessages
       }
 
       try {
-          await axios.post('https://localhost:5000/message', { message })
+          await axios.post('https://back-oqh6.onrender.com/message', { message })
           getUserMessages()
           getClickedUsersMessages()
           setTextArea("")

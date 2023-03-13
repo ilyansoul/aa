@@ -12,7 +12,7 @@ const ChatDisplay = ({ user , clickedUser }) => {
 
     const getUsersMessages = async () => {
      try {
-            const response = await axios.get('https://localhost:5000/messages', {
+            const response = await axios.get('https://back-oqh6.onrender.com/messages', {
                 params: { userId: userId, correspondingUserId: clickedUserId}
             })
          setUsersMessages(response.data)
@@ -23,7 +23,7 @@ const ChatDisplay = ({ user , clickedUser }) => {
 
     const getClickedUsersMessages = async () => {
         try {
-            const response = await axios.get('https://localhost:5000/messages', {
+            const response = await axios.get('https://back-oqh6.onrender.com/messages', {
                 params: { userId: clickedUserId , correspondingUserId: userId}
             })
             setClickedUsersMessages(response.data)

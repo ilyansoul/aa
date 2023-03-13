@@ -39,7 +39,7 @@ class EditRight extends Component {
       <div className="dash-container">
       <EditSection/>
       <h1> Ajouter/Modifier Photo</h1>
-        <form className='form-modify' action='http://localhost:5000/api/uploads' method='POST' >
+        <form className='form-modify' action='https://back-oqh6.onrender.com/api/uploads' method='POST' >
           <br />
           <br />
 

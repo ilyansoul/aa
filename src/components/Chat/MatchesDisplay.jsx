@@ -11,7 +11,7 @@ function MatchesDisplay({ matches , setClickUser   }) {
   const matchedUserIds = matches.map(({ user_id }) => user_id);
   const getMatches = async () => {
     try {
-      const response = await axios.get("https://localhost:5000/users", {
+      const response = await axios.get("https://back-oqh6.onrender.com/users", {
         params: { userIds: JSON.stringify(matchedUserIds) },
       });
       const matches = response.data.filter(user => matchedUserIds.includes(user.user_id));

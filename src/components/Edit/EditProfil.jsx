@@ -25,7 +25,7 @@ const EditProfil = () => {
         console.log('submitted')
         e.preventDefault()
         try {
-            const response = await axios.put('http://localhost:5000/edit', {editData})
+            const response = await axios.put('https://back-oqh6.onrender.com/edit', {editData})
             console.log(response)
             const success = response.status === 200
             console.log(success);
