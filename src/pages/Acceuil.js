@@ -11,8 +11,8 @@ function Acceuil() {
       <div className='background-m'>
       <div className='nav-bar'>
         <img className='logo-acceuil' src={Logo} alt="" />
-        <a className='btni-acceuil' href="http://localhost:3000/register">Inscription</a>
         <a className='btnc-acceuil'>
+          <Link to="/register"> Inscription </Link>
           <Link to="/login"> Connexion </Link>
         </a>
       </div>
