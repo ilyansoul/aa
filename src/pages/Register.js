@@ -31,7 +31,7 @@ const Register = () => {
                 return
             }
 
-            const response = await axios.post(`https://back-oqh6.onrender.com/signup`, { email, password })
+            const response = await axios.post(`https://localhost:5000/signup`, { email, password })
 
             setCookie('AuthToken', response.data.token)
             setCookie('UserId', response.data.userId)
