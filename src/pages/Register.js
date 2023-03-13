@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { useCookies } from 'react-cookie'
 import '../components/styles/register.css';
 import Logo from '../components/logo.png';
+import {Link} from 'react-router-dom'
 
 
 
@@ -30,7 +31,7 @@ const Register = () => {
                 return
             }
 
-            const response = await axios.post(`http://localhost:5000/signup`, { email, password })
+            const response = await axios.post(`https://back-oqh6.onrender.com/signup`, { email, password })
 
             setCookie('AuthToken', response.data.token)
             setCookie('UserId', response.data.userId)
