@@ -32,7 +32,7 @@ const OnBoarding = () => {
         console.log('submitted')
         e.preventDefault()
         try {
-            const response = await axios.put('http://localhost:5000/user', {formData})
+            const response = await axios.put('https://localhost:5000/user', {formData})
             console.log(response)
             const success = response.status === 200
             console.log(success);

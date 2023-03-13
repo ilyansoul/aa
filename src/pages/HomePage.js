@@ -19,7 +19,7 @@ const HomePage = () => {
 
   const getUser = async () => {
       try {
-          const response = await axios.get('http://localhost:5000/user', {
+          const response = await axios.get('https://localhost:5000/user', {
               params: {userId}
           })
           setUser(response.data)
@@ -30,7 +30,7 @@ const HomePage = () => {
 
   const getGenderedUsers = async () => {
       try {
-          const response = await axios.get('http://localhost:5000/gendered-users', {
+          const response = await axios.get('https://localhost:5000/gendered-users', {
               params: {gender: user?.gender_interest}
           })
           setGenderedUsers(response.data)
@@ -51,11 +51,11 @@ const HomePage = () => {
   
 const updateMatches = async (matchedUserId) => {
   try {
-    await axios.put('http://localhost:5000/addmatch', {
+    await axios.put('https://localhost:5000/addmatch', {
       userId,
       matchedUserId
     })
-    await axios.put('http://localhost:5000/addmatch', {
+    await axios.put('https://localhost:5000/addmatch', {
       userId: matchedUserId,
       matchedUserId: userId
     })
