@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../components/logo.png';
 import '../components/styles/Acceuil.css'
 import { Icon } from 'semantic-ui-react'
-
+import {Link} from 'react-router-dom'
 
 
 function Acceuil() {
@@ -11,8 +11,10 @@ function Acceuil() {
       <div className='background-m'>
       <div className='nav-bar'>
         <img className='logo-acceuil' src={Logo} alt="" />
-        <a className='btni-acceuil' href="https://gggg-4nd9.onrender.com/register">Inscription</a>
-        <a className='btnc-acceuil' href="https://gggg-4nd9.onrender.com/login">Connexion</a>
+        <a className='btni-acceuil' href="http://localhost:3000/register">Inscription</a>
+        <a className='btnc-acceuil'>
+          <Link to="/login"> Connexion </Link>
+        </a>
       </div>
 
 
