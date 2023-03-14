@@ -15,7 +15,10 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import {useCookies} from 'react-cookie'
 import OnBoarding from './pages/OnBoarding';
 import Chat from './components/Chat/Chat';
+import axios from 'axios'
 
+axios.defaults.baseURL = 'https://ok-3bja.onrender.com';
+axios.defaults.withCredentials = true;
 
 function App() {
 
