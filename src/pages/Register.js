@@ -31,7 +31,7 @@ const Register = () => {
                 return
             }
 
-            const response = await axios.post(`http://localhost:5000/signup`, { email, password })
+            const response = await axios.post(`/signup`, { email, password })
 
             setCookie('AuthToken', response.data.token)
             setCookie('UserId', response.data.userId)
