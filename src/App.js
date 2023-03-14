@@ -12,7 +12,6 @@ import EditRange from './components/Edit/EditRange';
 import EditDescription from './components/Edit/EditDescription';
 import Acceuil from './pages/Acceuil';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import {useCookies} from 'react-cookie'
 import OnBoarding from './pages/OnBoarding';
 import Chat from './components/Chat/Chat';
 import axios from 'axios'
@@ -22,9 +21,7 @@ axios.defaults.withCredentials = true;
 
 function App() {
 
-  const [cookies, setCookie, removeCookie] = useCookies(['user'])
 
-  const authToken = cookies.AuthToken
 
   return (
     <div className="App">
