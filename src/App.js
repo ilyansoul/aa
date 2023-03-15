@@ -17,10 +17,6 @@ import Chat from './components/Chat/Chat';
 import axios from 'axios'
 
 axios.defaults.baseURL = 'https://ok-3bja.onrender.com';
-axios.defaults.baseURL = 'https://ok-3bja.onrender.com/register';
-axios.defaults.baseURL = 'https://ok-3bja.onrender.com/login';
-axios.defaults.baseURL = 'https://ok-3bja.onrender.com/onboarding';
-axios.defaults.baseURL = 'https://ok-3bja.onrender.com/homepage';
 axios.defaults.withCredentials = true;
 
 function App() {
